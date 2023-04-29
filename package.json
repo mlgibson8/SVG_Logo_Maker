@@ -1,0 +1,26 @@
+{
+    "name": "SVG_Logo_Maker",
+    "version": "1.0.0",
+    "description": "Makes custom svg logo",
+    "main": "index.js",
+    "scripts": {
+      "test": "jest"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/mlgibson8/SVG_Logo_Maker.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/mlgibson8/SVG_Logo_Maker/issues"
+    },
+    "homepage": "https://github.com/mlgibson8/SVG_Logo_Maker#readme",
+    "dependencies": {
+      "inquirer": "^8.2.4"
+    },
+    "devDependencies": {
+      "jest": "^29.4.3"
+    }
+  }
