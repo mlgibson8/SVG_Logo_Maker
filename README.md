@@ -5,7 +5,7 @@
 ## Screenshots
 ![Screenshot](https://github.com/mlgibson8/SVG_Logo_Maker/blob/main/svg.png)
 ## Video
-![video](https://drive.google.com/file/d/1BEaSh6DFwlzWiczEZzWJNnHhywsDyJuF/view?usp=sharing)
+https://drive.google.com/file/d/1BEaSh6DFwlzWiczEZzWJNnHhywsDyJuF/view?usp=sharing
 ## Table of Contents
 * [Installation](#installation)
 * [Features](#features)
