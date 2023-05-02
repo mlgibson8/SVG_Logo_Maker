@@ -1,51 +1,23 @@
-cosnt inquirer = require ('inquirer');
-const { default: inquirer } = require('inquirer');
-const generateSVG = require('./utils.generateSVG');
+const inquirer = require('inquirer');
 const fs = require('fs');
+const questions = require('./lib/questions.js');
+const fileName = "./assets/logo.svg";
+const setShape = require('./lib/setShape.js')
 
-// array of questions for user
-// number of characters must be less than 3
-const questions = [
-    {
-        type: 'input',
-        message: 'Enter your logo text, it must be less than 3 characters',
-        name: 'logoText',
-        validate: function (value) {    
-            if (value.length > 3) {
-                return 'Please enter less than 3 characters';
-            } else {
-            return true;
-        }
-    } },
-// color of the logo text
+// function to create svg file using inquirer
+function generateSVG(response) {
+    const svg = setShape(response);
+    fs.writeFile(fileName, svg, ()=> console.log('Generated logo!'));
+}
+function init() {
+    inquirer 
+    .prompt(questions)
+    .then((response) => {
+        generateSVG(response);
+        })
+    .catch(err => {
+            console.log(err)
+        });
+}
 
-    {
-        type: 'input',
-        message: 'Enter your logo text color with a color keyword (OR a hexadecimal number)',
-        name: 'logoTextColor',
-    },
-// picking a shape for the logo
-{
-    type: 'list',
-    message: 'Pick a shape for your logo',
-    choices: ['circle', 'square', 'triangle'],
-    name: 'logoShape',
-},
-{
-    type: 'input',
-    message: 'Enter your logo shape color with a color keyword (OR a hexadecimal number)',
-    name: 'logoShapeColor',
-},
-]
-
-// inquirer
-inquirer.prompt(questions).then((data) => {
-    fs.writeFile('./assets/logo.svg',generateSVG(data), (err) => {
-        if(err){
-            console.log(err);
-        } else {
-            console.log('Your logo has been generated!')
-        }
-})
-});
-       
+init();
