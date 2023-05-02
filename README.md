@@ -1,11 +1,11 @@
 # SVG_Logo_Maker
-  [!Github License:MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+[!Github License:MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ## Description
   This code lets you make a SVG log by picking shape, color,text and text color
 ## Screenshots
-    ![Screenshot](https://github.com/mlgibson8/SVG_Logo_Maker/blob/main/svg.png)
+![Screenshot](https://github.com/mlgibson8/SVG_Logo_Maker/blob/main/svg.png)
 ## Video
-![media](https://drive.google.com/file/d/1BEaSh6DFwlzWiczEZzWJNnHhywsDyJuF/view?usp=share_link)
+![video](https://drive.google.com/file/d/1BEaSh6DFwlzWiczEZzWJNnHhywsDyJuF/view?usp=share_link)
 ## Table of Contents
 * [Installation](#installation)
 * [Features](#features)
